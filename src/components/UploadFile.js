@@ -22,7 +22,7 @@ function UploadFile() {
   return (
     <div className='container-upload'>
       <h1>JSON Graph Visualizer</h1>
-      <input type="file" accept=".json" onchange={HandlerFileUpload}/>
+      <input type="file" accept=".json" onChange={HandlerFileUpload}/>
       {jsonData && <JsonGraph json={jsonData}/>}
     </div>
   )
